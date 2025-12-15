@@ -1,0 +1,97 @@
+/* index.css */
+.title {
+    margin-left: 10px;
+}
+
+/* カテゴリ選択ボタンのスタイル */
+.category-selection {
+    margin: 20px 10px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.category-selection button {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s ease;
+    outline: none;
+}
+
+.category-selection button:hover {
+    background-color: #e0e0e0;
+}
+
+.category-selection button.active {
+    background-color: #6091d3;
+    color: #fff;
+    border-color: #6091d3;
+    font-weight: bold;
+}
+
+/* ローディングインジケータ */
+.loading-indicator {
+    margin: 20px 10px;
+    padding: 20px;
+    border: 1px dashed #ccc;
+    text-align: center;
+    color: #555;
+    font-weight: bold;
+}
+
+
+/* ニュース一覧の既存スタイル */
+.article {
+    list-style: none;
+    padding: 0 10px;
+}
+.article-item {
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px 20px 20px 20px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    border: solid 1.5px rgba(0, 0, 0, 0.1);
+}
+
+.article-title {
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+.article-title a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+.article-title a:hover {
+    text-decoration: underline;
+}
+
+.article-description {
+    font-size: 16px;
+    color: #555;
+    margin-top: 5px;
+}
+
+.article-tags {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap; /* タグが多い場合に折り返す */
+}
+.article-tag {
+    font-size: 12px;
+    margin-right: 5px;
+    margin-bottom: 5px; /* 折り返し時のスペース */
+    padding: 6px 10px;
+    color: #fff;
+    background-color: #6091d3;
+    border: solid 2px #6091d3;
+    border-radius: 10px;
+    white-space: nowrap; /* タグが途中で切れないように */
+}
